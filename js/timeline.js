@@ -156,10 +156,41 @@ $(document).ready(function() {
             );
         all_items.forEach(function(timeline_item) {
             if (timeline_item.year === year) {
+                var type = "&#xf10c;";
+                var icon = "";
+                if (timeline_item.type === "award") {
+                    var type = "&#xf006;";
+                    var icon = " timeline-marker-star";
+                }
+                if (timeline_item.type === "contest") {
+                    var type = "&#xf006;";
+                    var icon = " timeline-marker-star";
+                }
+                
                 $(".timeline-centered")
                     .append(
-                        '<li class="timeline-item">' + '<div class="timeline-info">' + '<span>' + timeline_item.date + '</span>' + '</div>' + '<div class="timeline-marker">' + "&#xf10c;" + '</div>' + '<div class="timeline-content">' + '<h3 class="timeline-title">' + timeline_item.title + '</h3>' + (timeline_item.subtitle ? '<h4 class="timeline-title">' + timeline_item.subtitle + '</h4>' : '') + '<p>' + timeline_item.description + '</p>' + '</div>' + '</li>'
-                    );
+                        '<li class="timeline-item">'
+                        + '<div class="timeline-info">'
+                        + '<span>'
+                        + timeline_item.date
+                        + '</span>'
+                        + '</div>'
+                        + '<div class="timeline-marker' + icon + '">'
+                        + type
+                        + '</div>'
+                        + '<div class="timeline-content">'
+                        + '<h3 class="timeline-title">'
+                        + timeline_item.title
+                        + '</h3>'
+                        + (timeline_item.subtitle ? '<h4 class="timeline-title">'
+                        + timeline_item.subtitle
+                        + '</h4>' : '')
+                        + '<p>'
+                        + timeline_item.description
+                        + '</p>'
+                        + '</div>'
+                        + '</li>'
+                        );
             }
         });
     });
