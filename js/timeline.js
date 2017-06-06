@@ -158,7 +158,7 @@ $(document).ready(function() {
             if (timeline_item.year === year) {
                 $(".timeline-centered")
                     .append(
-                        '<li class="timeline-item">' + '<div class="timeline-info">' + '<span>' + timeline_item.date + '</span>' + '</div>' + '<div class="timeline-marker"></div>' + '<div class="timeline-content">' + '<h3 class="timeline-title">' + timeline_item.title + '</h3>' + (timeline_item.subtitle ? '<h4 class="timeline-title">' + timeline_item.subtitle + '</h4>' : '') + '<p>' + timeline_item.description + '</p>' + '</div>' + '</li>'
+                        '<li class="timeline-item">' + '<div class="timeline-info">' + '<span>' + timeline_item.date + '</span>' + '</div>' + '<div class="timeline-marker">' + "&#xf10c;" + '</div>' + '<div class="timeline-content">' + '<h3 class="timeline-title">' + timeline_item.title + '</h3>' + (timeline_item.subtitle ? '<h4 class="timeline-title">' + timeline_item.subtitle + '</h4>' : '') + '<p>' + timeline_item.description + '</p>' + '</div>' + '</li>'
                     );
             }
         });
