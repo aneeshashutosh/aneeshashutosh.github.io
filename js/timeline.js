@@ -1,5 +1,5 @@
 // Pre-populate these fields to decrease execution time.
-var years = [2017, 2016, 2015, 2014, 2013, 2012, 2011]; 
+var years = [2017, 2016, 2015, 2014, 2013, 2012, 2011];
 
 // Make sure that these are in order, again, to decrease execution time.
 var all_items = [{
@@ -14,7 +14,7 @@ var all_items = [{
     date: "April 14",
     year: 2017,
     type: "award",
-    description: "Received two President's Service Awards; one for my work as a member at the NYU Entrepreneurship & Innovation Association, and one for my individual achievements in my year-and-a-half at NYU.<br></br>The purpose of the President’s Service Award is to recognize the distinguished achievements of students and student organizations for their promotion of learning, leadership, and quality of student life at New York University.<br></br>President's Service Awards are given to students or student organizations that have had an extraordinary and positive impact on the University community, including achievements within schools and departments, the University at large, local neighborhoods, and NYU's presence in the world."
+    description: "Received two President's Service Awards; one for my work as a member at the NYU Entrepreneurship & Innovation Association, and one for my individual achievements in computer science, marketing, and the intersection of the two fields in my year-and-a-half at NYU.<br></br>The purpose of the President’s Service Award is to recognize the distinguished achievements of students and student organizations for their promotion of learning, leadership, and quality of student life at New York University.<br></br>President's Service Awards are given to students or student organizations that have had an extraordinary and positive impact on the University community, including achievements within schools and departments, the University at large, local neighborhoods, and NYU's presence in the world."
 }, {
     title: "Washington Square News Up & Comer",
     date: "March 23",
@@ -24,7 +24,7 @@ var all_items = [{
 }, {
     title: "YHack",
     subtitle: "Yale University",
-    date: "November 11 – November 13",
+    date: "November 11 – 13",
     year: 2016,
     type: "contest",
     description: "Created Metropolis, a program that turns hand-drawn 2D-sketches of rooms into immersive 3D VR experiences using inverse graphics, Monte-Carlo Markov chains, Unity, and a custom-built renderer."
@@ -35,6 +35,33 @@ var all_items = [{
     year: 2016,
     type: "job",
     description: "Worked on Twitter's Timeline Service team. Developed a tool to analyze and debug why posts were selected for injection into user timelines, as well as implementing general overall improvements to the Twitter timeline experience."
+}, {
+    title: "The Future of Listening Hackathon",
+    subtitle: "Audible, Amazon, and the NYC Media Lab",
+    date: "April 16",
+    year: 2016,
+    type: "contest",
+    description: "Developed an algorithm that dynamically increased or decreased the length of the white space between words in an audiobook, preserving the fidelity of speech while increasing the speed at which the audiobook could be heard."
+}, {
+    title: "Violet Spotlight",
+    subtitle: "New York University",
+    date: "March 30",
+    year: 2016,
+    type: "award",
+    description: "Featured as an NYU Violet Spotlight for my work in computer science at NYU. The Violet Spotlight program is used to showcase influential students at NYU and give them a platform to show their work."
+}, {
+    title: "HerCampus NYU Spotlight",
+    date: "February 13",
+    year: 2016,
+    type: "award",
+    description: "Interviewed by HerCampus NYU for my work in computer science and marketing at NYU."
+}, {
+    title: "Hack the Dinos",
+    subtitle: "The American Museum of Natural History",
+    date: "November 20 – 22",
+    year: 2015,
+    type: "contest",
+    description: "Developed a VR game to help transcibe and classify historical documents, dig up fossils, and teach students more about paleontology. Also built a Dinosaur Ouija board last-minute for fun."
 }, {
     title: "Vine",
     subtitle: "Software Engineering Intern",
