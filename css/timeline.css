@@ -1,7 +1,22 @@
+@font-face {
+    font-family: "regular";
+    src: url(fonts/regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "light";
+    src: url(fonts/light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(fonts/bold.ttf) format("truetype");
+}
+
 body {
     color: #768390;
     background: #FFF;
-    font-family: "Effra", Helvetica, sans-serif;
+    font-family: "regular", Helvetica, sans-serif;
     padding: 0;
     -webkit-font-smoothing: antialiased;
 }
@@ -28,14 +43,14 @@ a:hover {
 .example-header {
     background: #3D4351;
     color: #FFF;
-    font-weight: 300;
+    font-family: "regular", Helvetica, sans-serif;
     padding: 2em 1em;
     text-align: center;
 }
 
 .example-header h1 {
     color: #FFF;
-    font-weight: 300;
+    font-family: "regular", Helvetica, sans-serif;
     margin-bottom: 0px;
 }
 
@@ -43,7 +58,7 @@ a:hover {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 700;
+    font-family: "bold", Helvetica, sans-serif;
 }
 
 .container-fluid .row {
@@ -109,7 +124,7 @@ a:hover {
 
 .timeline-info {
     font-size: 12px;
-    font-weight: 700;
+    font-family: "bold", Helvetica, sans-serif;
     letter-spacing: 3px;
     margin: 0 0 .5em 0;
     text-transform: uppercase;
