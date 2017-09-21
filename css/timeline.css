@@ -29,14 +29,14 @@ a:hover {
     background: #3D4351;
     color: #FFF;
     font-weight: 300;
-    padding: 3em 1em;
+    padding: 2em 1em;
     text-align: center;
 }
 
 .example-header h1 {
     color: #FFF;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .example-header p {
@@ -56,7 +56,6 @@ a:hover {
 
 .example-title {
     text-align: center;
-    margin-bottom: 60px;
     padding: 3em 0;
     border-bottom: 1px solid #E4EAEC;
 }
