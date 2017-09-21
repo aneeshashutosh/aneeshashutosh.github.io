@@ -5,7 +5,7 @@ var years = [2017, 2016, 2015, 2014, 2013, 2012, 2011];
 var all_items = [{
     title: "Namely",
     subtitle: "Software Engineering Intern",
-    date: "May 22 – present",
+    date: "May 22 – August 11",
     year: 2017,
     type: "job",
     description: "The first software engineering intern at Namely, ever. Working to optimize and speed up front-end performance."
