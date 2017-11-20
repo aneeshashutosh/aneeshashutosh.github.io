@@ -1,8 +1,28 @@
 // Pre-populate these fields to decrease execution time.
-var years = [2017, 2016, 2015, 2014, 2013, 2012, 2011];
+var years = [2017, 2016, 2015, 2014, 2013, 2011];
 
 // Make sure that these are in order, again, to decrease execution time.
 var all_items = [{
+    title: "Washington Square News",
+    subtitle: "Internship Interview",
+    date: "September 29",
+    year: 2017,
+    type: "award",
+    description: "Interviewed as one of four NYU students to share my internship experiences with Twitter and Namely for a video and article by Washington Square News, NYU's newspaper."
+}, {
+    title: "NYU Open Call",
+    date: "September 28",
+    year: 2017,
+    type: "award",
+    description: "Chosen as a featured student for the NYU Open Call. Interviewed for use in promotional materials for prospective applicants to NYU."
+}, {
+    title: "Google",
+    subtitle: "VR Contractor",
+    date: "September 12 – present",
+    year: 2017,
+    type: "job",
+    description: "Working with Google New York's VR team. Developed a tool to automatically tag 3D objects. Tagged and published 3000 3D models from Google Blocks and Google Tiltbrush for Google Poly."
+}, {
     title: "Namely",
     subtitle: "Software Engineering Intern",
     date: "May 22 – August 11",
@@ -14,12 +34,14 @@ var all_items = [{
     date: "April 14",
     year: 2017,
     type: "award",
+    link: "https://www.nyu.edu/life/events-traditions/presidents-service-awards.html",
     description: "Received two President's Service Awards; one for my work as a member at the NYU Entrepreneurship & Innovation Association, and one for my individual achievements in computer science, marketing, and the intersection of the two fields in my year-and-a-half at NYU.<br></br>The purpose of the President’s Service Award is to recognize the distinguished achievements of students and student organizations for their promotion of learning, leadership, and quality of student life at New York University.<br></br>President's Service Awards are given to students or student organizations that have had an extraordinary and positive impact on the University community, including achievements within schools and departments, the University at large, local neighborhoods, and NYU's presence in the world."
 }, {
     title: "Washington Square News Up & Comer",
     date: "March 23",
     year: 2017,
     type: "award",
+    link: "https://www.nyunews.com/2017/03/23/aneesh-ashutosh/",
     description: "Named as one of NYU's ten up-and-coming students for my work in computer science, marketing, and leadership at NYU."
 }, {
     title: "YHack",
@@ -27,6 +49,7 @@ var all_items = [{
     date: "November 11 – 13",
     year: 2016,
     type: "contest",
+    link: "https://devpost.com/software/metropolis",
     description: "Created Metropolis, a program that turns hand-drawn 2D-sketches of rooms into immersive 3D VR experiences using inverse graphics, Monte-Carlo Markov chains, Unity, and a custom-built renderer."
 }, {
     title: "Twitter",
@@ -35,6 +58,13 @@ var all_items = [{
     year: 2016,
     type: "job",
     description: "Worked on Twitter's Timeline Service team. Developed a tool to analyze and debug why posts were selected for injection into user timelines, as well as implementing general overall improvements to the Twitter timeline experience."
+}, {
+    title: "Columbia Venture Contest",
+    subtitle: "Finalist",
+    date: "April 28",
+    year: 2016,
+    type: "contest",
+    description: "Co-founded Laminar Dynamics with friends from Columbia University. Developed software and hardware to create autonomous drones that could deliver medicine to remote villages that traditional ground delivery methods could not reach. Finished in the top five of the Columbia Venture Contest."
 }, {
     title: "The Future of Listening Hackathon",
     subtitle: "Audible, Amazon, and the NYC Media Lab",
@@ -48,12 +78,14 @@ var all_items = [{
     date: "March 30",
     year: 2016,
     type: "award",
+    link: "https://www.facebook.com/NYU/photos/a.388608098688.192968.103256838688/10154148019578689/?type=3&theater",
     description: "Featured as an NYU Violet Spotlight for my work in computer science at NYU. The Violet Spotlight program is used to showcase influential students at NYU and give them a platform to show their work."
 }, {
     title: "HerCampus NYU Spotlight",
     date: "February 13",
     year: 2016,
     type: "award",
+    link: "http://www.hercampus.com/school/nyu/aneesh-ashutosh-18-year-old-software-developer-and-intern-twitter",
     description: "Interviewed by HerCampus NYU for my work in computer science and marketing at NYU."
 }, {
     title: "Hack the Dinos",
@@ -101,6 +133,7 @@ var all_items = [{
     date: "April 5",
     year: 2014,
     type: "contest",
+    link: "http://ypologist.com/mmalita17/contest/index.html",
     description: "Received third place in the Saint Anselm branch of the Saint Anselm Programming Contest 2014, fifth place overall.",
 }, {
     title: "Actifio",
@@ -129,6 +162,7 @@ var all_items = [{
     date: "April 6",
     year: 2013,
     type: "contest",
+    link: "http://ypologist.com/mmalita17/contest/index.html",
     description: "Received first place in the Saint Anselm branch of the Saint Anselm Programming Contest 2013, third place overall.",
 }, {
     title: "Phillips Academy",
@@ -158,6 +192,7 @@ $(document).ready(function() {
             if (timeline_item.year === year) {
                 var type = "&#xf10c;";
                 var icon = "";
+                var link = "";
                 if (timeline_item.type === "award") {
                     var type = "&#xf006;";
                     var icon = " timeline-marker-star";
@@ -179,9 +214,11 @@ $(document).ready(function() {
                         type +
                         '</div>' +
                         '<div class="timeline-content">' +
-                        '<h3 class="timeline-title">' +
+                        (timeline_item.link ? '<a href="' + timeline_item.link + '"><h3 class="timeline-title">' +
                         timeline_item.title +
-                        '</h3>' +
+                        '</h3></a>' : '<h3 class="timeline-title">' +
+                        timeline_item.title +
+                        '</h3>') +
                         (timeline_item.subtitle ? '<h4 class="timeline-title">' +
                             timeline_item.subtitle +
                             '</h4>' : '') +
