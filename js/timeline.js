@@ -10,12 +10,12 @@ var all_items = [{
     type: "job",
     description: "Will be working on the Office 365 Workplace Analytics team."
 }, {
-    title: "NYU Entrepeneur's Network",
+    title: "NYU Entrepreneur's Network",
     subtitle: "Speaker",
     date: "November 16",
     year: 2017,
     type: "award",
-    description: "Spoke at the NYU Entrepeneur's Network to share marketing techniques I have cultivated over the years, aiding other clubs in their marketing efforts."
+    description: "Spoke at the NYU Entrepreneur's Network to share marketing techniques I have cultivated over the years, aiding other clubs in their marketing efforts."
 }, {
     title: "Washington Square News",
     subtitle: "Internship Interview",
