@@ -1,8 +1,22 @@
 // Pre-populate these fields to decrease execution time.
-var years = [2017, 2016, 2015, 2014, 2013, 2011];
+var years = [2018, 2017, 2016, 2015, 2014, 2013, 2011];
 
 // Make sure that these are in order, again, to decrease execution time.
 var all_items = [{
+    title: "Microsoft",
+    subtitle: "Incoming Software Engineering Intern",
+    date: "May 21 - August 10",
+    year: 2018,
+    type: "job",
+    description: "Will be working on the Office 365 Workplace Analytics team."
+}, {
+    title: "NYU Entrepeneur's Network",
+    subtitle: "Speaker",
+    date: "November 16",
+    year: 2017,
+    type: "award",
+    description: "Spoke at the NYU Entrepeneur's Network to share marketing techniques I have cultivated over the years, aiding other clubs in their marketing efforts."
+}, {
     title: "Washington Square News",
     subtitle: "Internship Interview",
     date: "September 29",
@@ -15,6 +29,13 @@ var all_items = [{
     year: 2017,
     type: "award",
     description: "Chosen as a featured student for the NYU Open Call. Interviewed for use in promotional materials for prospective applicants to NYU."
+}, {
+    title: "Ascend New York Metro",
+    subtitle: "Speaker",
+    date: "September 22",
+    year: 2017,
+    type: "award",
+    description: "Spoke at the Ascend New York Metro meeting at PricewaterhouseCoopers to share marketing techniques I have cultivated over the years, aiding the other chapters in their marketing efforts."
 }, {
     title: "Google",
     subtitle: "VR Contractor",
