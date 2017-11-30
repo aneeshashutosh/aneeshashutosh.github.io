@@ -4,11 +4,6 @@
 }
 
 @font-face {
-    font-family: "light";
-    src: url(fonts/light.ttf) format("truetype");
-}
-
-@font-face {
     font-family: "bold";
     src: url(fonts/bold.ttf) format("truetype");
 }
@@ -82,6 +77,7 @@ a:hover {
 }
 
 
+
 /*==================================
     TIMELINE
 ==================================*/
@@ -108,6 +104,7 @@ a:hover {
 }
 
 
+
 /*----- TIMELINE ITEM -----*/
 
 .timeline-item {
@@ -120,6 +117,7 @@ a:hover {
 }
 
 
+
 /*----- TIMELINE INFO -----*/
 
 .timeline-info {
@@ -130,6 +128,7 @@ a:hover {
     text-transform: uppercase;
     white-space: nowrap;
 }
+
 
 
 /*----- TIMELINE MARKER -----*/
@@ -160,7 +159,7 @@ a:hover {
     -moz-transition: opacity 0.3s ease;
     -ms-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
-    transition:  opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
 }
 
 .timeline-marker-star:before {
@@ -190,8 +189,9 @@ a:hover {
     -moz-transition: opacity 0.3s ease;
     -ms-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
-    transition:  opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
 }
+
 
 
 /*----- TIMELINE CONTENT -----*/
@@ -203,6 +203,7 @@ a:hover {
 .timeline-content p:last-child {
     margin-bottom: 0;
 }
+
 
 
 /*----- TIMELINE PERIOD -----*/
@@ -242,6 +243,7 @@ a:hover {
 .period .timeline-title {
     margin: 0;
 }
+
 
 
 /*----------------------------------------------
@@ -289,6 +291,7 @@ a:hover {
 }
 
 
+
 /*----------------------------------------------
     MOD: TIMELINE CENTERED
 ----------------------------------------------*/
@@ -316,27 +319,27 @@ a:hover {
     .timeline-centered .timeline-content {
         width: 50%;
     }
-    .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+    .timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
         float: left;
         text-align: right;
         padding-right: 30px;
     }
-    .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+    .timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
         float: right;
         text-align: left;
         padding-left: 30px;
     }
-    .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+    .timeline-centered>.timeline-item:nth-child(even) .timeline-info {
         float: right;
         text-align: left;
         padding-left: 30px;
     }
-    .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+    .timeline-centered>.timeline-item:nth-child(even) .timeline-content {
         float: left;
         text-align: right;
         padding-right: 30px;
     }
-    .timeline-centered > .timeline-item.period .timeline-content {
+    .timeline-centered>.timeline-item.period .timeline-content {
         float: none;
         padding: 0;
         width: 100%;
@@ -354,6 +357,7 @@ a:hover {
         left: auto;
     }
 }
+
 
 
 /*----------------------------------------------

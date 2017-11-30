@@ -1,8 +1,8 @@
 // Pre-populate these fields to decrease execution time.
-var years = [2018, 2017, 2016, 2015, 2014, 2013, 2011];
+const years = [2018, 2017, 2016, 2015, 2014, 2013, 2011];
 
 // Make sure that these are in order, again, to decrease execution time.
-var all_items = [{
+const all_items = [{
     title: "Microsoft",
     subtitle: "Incoming Software Engineering Intern",
     date: "May 21 - August 10",
@@ -197,7 +197,7 @@ var all_items = [{
     year: 2011,
     type: "school",
     description: "Graduated from the Fenn School, a 4th-through-9th grade all-male private middle school in Concord, MA.",
-}, ];
+},];
 
 $(document).ready(function() {
     years.forEach(function(year) {
@@ -213,7 +213,7 @@ $(document).ready(function() {
             if (timeline_item.year === year) {
                 var type = "&#xf10c;";
                 var icon = "";
-                var link = "";
+                const link = "";
                 if (timeline_item.type === "award") {
                     var type = "&#xf006;";
                     var icon = " timeline-marker-star";
