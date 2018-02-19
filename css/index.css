@@ -321,6 +321,7 @@ button {
 
 .banner-left-wrapper,
 .banner-right-wrapper {
+    overflow: hidden;
     position: relative;
 }
 
